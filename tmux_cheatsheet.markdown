@@ -4,9 +4,13 @@ As configured in [my dotfiles](https://github.com/henrik/dotfiles/blob/master/tm
 
   
   Prefix key Ctrl+b
+  
   Ctrl+b c - new window
+  
   Ctrl+b Shift Left-Right - swap windows
+  
   Ctrl+b v - horizontal split
+  
   Alt-Left Right - swap panes
 
 
