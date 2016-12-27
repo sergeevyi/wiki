@@ -1,20 +1,19 @@
 # tmux cheatsheet
 
 As configured in [my dotfiles](https://github.com/henrik/dotfiles/blob/master/tmux.conf).
-
   
-  Prefix key Ctrl+b
-  
-  Ctrl+b c - new window
-  Ctrl+b d - disconnect
-  Ctrl+b 0...9 — go to window ..;
-  Shift+ →|← - swap windows
-  
-  Ctrl+b p — go to the previous window;
-  Ctrl+b n — go to the next window;
-  Ctrl+b & — close window (or exit ).
+Prefix key Ctrl+b  
+Ctrl+b c - new window;
 
+Ctrl+b d - disconnect	
 
+Ctrl+b 0...9 — go to window ..;	
+Shift+ →|← - swap windows	
+Ctrl+b p — go to the previous window;	
+Ctrl+b n — go to the next window;
+Ctrl+b & — close window (or exit ).
+	
+  
 Ctrl+b % — vertical split;
 Ctrl+b " — horizontal split;
 Ctrl+b v - horizontal split
