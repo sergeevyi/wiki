@@ -6,14 +6,23 @@ As configured in [my dotfiles](https://github.com/henrik/dotfiles/blob/master/tm
   Prefix key Ctrl+b
   
   Ctrl+b c - new window
+  Ctrl+b d - disconnect
+  Ctrl+b 0...9 — go to window ..;
+  Shift+ →|← - swap windows
   
-  Ctrl+b Shift Left-Right - swap windows
-  
-  Ctrl+b v - horizontal split
-  
-  Alt-Left Right - swap panes
+  Ctrl+b p — go to the previous window;
+  Ctrl+b n — go to the next window;
+  Ctrl+b & — close window (or exit ).
 
 
+Ctrl+b % — vertical split;
+Ctrl+b " — horizontal split;
+Ctrl+b v - horizontal split
+Alt-Left Right - swap panes
+Ctrl+b →←↑↓ — swap panes;
+Ctrl+b x — close panel (or exit);
+
+Ctrl+b Alt+(→|←|↑|↓) - change panel sizes;
 
 start new:
 
