@@ -110,40 +110,43 @@ add_header X-XSS-Protection "1; mode=block";
 add_header Content-Security-Policy "frame-ancestors 'self'";
 ```
 
-1. X-XSS-Protection
+### X-XSS-Protection
 
 ```
 add_header X-XSS-Protection "1; mode=block";
 ```
 
-1. HTTP Strict Transport Security
+### HTTP Strict Transport Security
 
 HSTS (HTTP Strict Transport Security) header to ensure all communication from a browser is sent over HTTPS (HTTP Secure). This prevents HTTPS click through prompts and redirects HTTP requests to HTTPS.
 
 Before implementing this header, you must ensure all your website page is accessible over HTTPS else they will be blocked.
 
+```
 add_header Strict-Transport-Security ‘max-age=31536000; includeSubDomains; preload’;
+```
 
-1. X-Frame-Options
+### X-Frame-Options
 
 Use X-Frame-Options header to prevent Clickjacking vulnerability on your website. By implementing this header, you instruct the browser not to embed your web page in frame/iframe. This has some limitation in browser support, so you got to check before implementing it.
 
+```
 add_header X-Frame-Options SAMEORIGIN;
-
+```
 SAMEORIGIN - Frame/iframe of content is only allowed from the same site origin.
 
-1. X-Content-Type-Options
-
+### X-Content-Type-Options
+```
 add_header X-Content-Type-Options nosniff;
-
+```
 Prevent MIME types security risk by adding this header to your web page’s HTTP response. Having this header instruct browser to consider files types as defined and disallow content sniffing. There is only one parameter you got to add “nosniff”.
 
-1. Content Security Policy
+### Content Security Policy
 
 Prevent XSS, clickjacking, code injection attacks by implementing the Content Security Policy (CSP) header in your web page HTTP response.
-
+```
 add_header Content-Security-Policy “default-src ‘self’;”;
-
+```
 https://geekflare.com/http-header-implementation/
 
 ## Setting up Nginx reverse proxy
