@@ -206,7 +206,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysq
 
 ```
 location / {
-                allow 202.83.225.118;
+                allow 1.1.1.1;
                 deny all; # Deny everyone else
 }
 ```
@@ -239,7 +239,7 @@ http://nginx.org/en/docs/http/load_balancing.html
 
 ```
 access_log /var/log/nginx/access.log;
-    error_log /var/log/nginx/error.log;
+error_log /var/log/nginx/error.log;
 ```
 
 ## WAF
