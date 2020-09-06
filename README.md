@@ -6,3 +6,4 @@
 4. [Linux - main commands](./linux_commands.md)
 5. [MongoDb - Cluster setup](./mongodb.md)
 6. [tmux Cheatsheet](./tmux_cheatsheet.markdown)
+7. [Nginx](./nginx.md)
